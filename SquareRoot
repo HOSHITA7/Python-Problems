@@ -1,0 +1,12 @@
+num = 9
+sqrt=num**0.5
+print(sqrt)
+
+//
+
+num=8
+num_sqrt = num ** 0.5
+print('The square root of %0.f is %0.f'%(num ,num_sqrt))
+The % operator here is used to insert the values of num and num_sqrt into the string.
+//
+
