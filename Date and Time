@@ -1,0 +1,9 @@
+import datetime
+p = datetime.datetime.now()
+print("Current date and time : ")
+print(p.strftime("%Y-%m-%d %H:%M:%S"))
+
+/*
+Current date and time : 
+2014-07-05 14:34:14
+*/
