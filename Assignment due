@@ -1,0 +1,49 @@
+x, y = map(int, input().split())
+if x <= y:
+    print("YES")
+else:
+    print("NO")
+
+'''
+def solve():
+x, y = map(int, input().split())
+if x <= y:
+  print("YES")
+else:
+  print("NO")
+solve()
+'''
+
+'''Simplest Version (Remove if-else Block)
+x, y = map(int, input().split())
+print("YES" if x <= y else "NO")
+'''
+
+
+'''Direct Boolean Trick (Very Smart Way)
+x, y = map(int, input().split())
+print(["NO", "YES"][x <= y])
+'''
+
+
+'''One-Line Version (Most Compact)
+print("YES" if (lambda a,b: a<=b)(*map(int,input().split())) else "NO")
+'''
+
+
+'''Without map() (Manual Way)
+values = input().split()
+x = int(values[0])
+y = int(values[1])
+print("YES" if x <= y else "NO")
+'''
+
+
+'''Using Direct Comparison Inside print()
+x, y = map(int, input().split())
+result = x <= y
+if result:
+    print("YES")
+else:
+    print("NO")
+'''
