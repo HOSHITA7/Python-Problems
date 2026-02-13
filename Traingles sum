@@ -1,0 +1,43 @@
+a, b = map(int, input().split())
+c = 180 - (a + b)
+print(c)
+
+'''  Using List Instead of Direct Unpacking
+nums = list(map(int, input().split()))
+a = nums[0]
+b = nums[1]
+
+c = 180 - (a + b)
+print(c)
+'''
+
+'''Without map() (Manual Conversion)
+values = input().split()
+a = int(values[0])
+b = int(values[1])
+c = 180 - (a + b)
+print(c)
+'''
+
+'''Using sum() (Shorter Version)
+numbers = list(map(int, input().split()))
+c = 180 - sum(numbers)
+print(c)
+'''
+
+'''Using Lambda (Advanced Style)
+a, b = map(lambda x: int(x), input().split())
+c = 180 - (a + b)
+print(c)
+'''
+
+'''One-Line Version (Very Compact)
+print(180 - sum(map(int, input().split())))
+'''
+
+
+
+
+
+
+
